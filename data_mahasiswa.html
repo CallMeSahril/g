@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Data Mahasiswa</title>
+</head>
+
+<body>
+    <div class="header">
+        <img src="univ_logo.png" alt="University Logo">
+        <h1>Input Data Mahasiswa</h1>
+    </div>
+
+    <div class="content">
+        <form action="#" method="post">
+            <table class="form-table">
+                <tr>
+                    <td><label for="npm">NPM:</label></td>
+                    <td><input type="text" id="npm" name="npm" required></td>
+                </tr>
+                <tr>
+                    <td><label for="nama">Nama:</label></td>
+                    <td><input type="text" id="nama" name="nama" required></td>
+                </tr>
+                <tr>
+                    <td><label for="kelas">Kelas:</label></td>
+                    <td>
+                        <select id="kelas" name="kelas">
+                            <option value="R5A">R5A</option>
+                            <!-- Tambahkan opsi kelas lainnya sesuai kebutuhan -->
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="no_telp">No Telp:</label></td>
+                    <td><input type="tel" id="no_telp" name="no_telp" required></td>
+                </tr>
+                <tr>
+                    <td><label for="alamat">Alamat:</label></td>
+                    <td><input type="text" id="alamat" name="alamat" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="center">
+                        <button type="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Created By @NPM dan Nama Tahun 2023</p>
+    </div>
+</body>
+
+</html>

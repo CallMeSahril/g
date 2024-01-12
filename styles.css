@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.header img {
+    width: 100px;
+}
+
+.menu {
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu a {
+    display: block;
+    /* Menjadikan setiap menu item sebagai blok */
+    color: #c0392b;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+
+.menu a:hover {
+    background-color: #c0392b;
+    color: #fff;
+}
+
+.footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.form-table {
+    width: 80%;
+    /* Misalkan menggunakan 80% lebar parent (content) */
+    margin: 0 auto;
+    /* Menyusun tabel ke tengah */
+}
+
+.form-table td {
+    padding: 5px;
+}
+
+.center {
+    text-align: center;
+}
