@@ -42,11 +42,12 @@ body {
 }
 
 .form-table {
-    width: 80%;
     /* Misalkan menggunakan 80% lebar parent (content) */
     margin: 0 auto;
     /* Menyusun tabel ke tengah */
 }
+
+
 
 .form-table td {
     padding: 5px;

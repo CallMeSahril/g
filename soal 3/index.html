@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kalkulator Cicilan Pinjaman</title>
+    <script>
+        function hitungCicilan() {
+            // Meminta input menggunakan prompt
+            var jumlahPinjaman = parseFloat(prompt("Masukkan Jumlah Pinjaman (Rp):"));
+            var tingkatBunga = parseFloat(prompt("Masukkan Tingkat Bunga Pertahun (%):"));
+            var durasiPinjaman = parseFloat(prompt("Masukkan Durasi Pinjaman (Bulan):"));
+
+            // Memastikan input valid
+            if (isNaN(jumlahPinjaman) || isNaN(tingkatBunga) || isNaN(durasiPinjaman)) {
+                alert("Input tidak valid. Harap masukkan angka.");
+                return;
+            }
+
+            // Menghitung cicilan bulanan
+            var cicilanBulanan = (jumlahPinjaman * tingkatBunga) / (durasiPinjaman * 12);
+
+            // Menentukan keterangan cicilan
+            var keterangan = "Tidak terjangkau";
+            if (cicilanBulanan < 0.3 * jumlahPinjaman) {
+                keterangan = "Cicilan terjangkau";
+            }
+
+            // Menampilkan hasil di dalam body
+            var hasil = "Jumlah Pinjaman: Rp " + jumlahPinjaman.toFixed(2) + "<br>" +
+                "Tingkat Bunga: " + tingkatBunga.toFixed(2) + "%<br>" +
+                "Durasi Pinjaman: " + durasiPinjaman + " Bulan<br>" +
+                "Keterangan: " + keterangan;
+
+            document.getElementById('hasil').innerHTML = hasil;
+        }
+
+        // Panggil fungsi hitungCicilan saat halaman dibuka
+        window.onload = function () {
+            hitungCicilan();
+        };
+    </script>
+</head>
+
+<body>
+    <h1>Kalkulator Cicilan Pinjaman Bulanan</h1>
+
+    <div id="hasil"></div>
+</body>
+
+</html>
