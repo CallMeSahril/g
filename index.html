@@ -4,11 +4,16 @@
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Home Page</title>
+    <script>
+        function showNotAvailableAlert() {
+            alert("Halaman belum tersedia.");
+        }
+    </script>
 </head>
 
 <body>
     <div class="header">
-        <img src="univ_logo.png" alt="University Logo">
+        <img src="unindra.png" alt="University Logo">
         <h1>UNIVERSITAS INDRAPRASTA PGRI</h1>
         <p>JL. Nangka No.58 Tajung Barat - jaksel</p>
     </div>
@@ -16,8 +21,8 @@
     <div class="menu">
         <span class="menu-link">Input Data Kampus</span>
         <a href="data_mahasiswa.html" class="menu-link">Data Mahasiswa</a>
-        <a href="#" class="menu-link">Data Dosen</a>
-        <a href="#" class="menu-link">Data Pegawai</a>
+        <a onclick="showNotAvailableAlert()" class="menu-link">Data Dosen</a>
+        <a onclick="showNotAvailableAlert()" class="menu-link">Data Pegawai</a>
     </div>
 
 
